@@ -1,0 +1,97 @@
+.shop-container{
+    background-color: rgb(51,56,61);
+    color:white;
+    padding: 0 75px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.our-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-shop h1{
+    font-size: 52px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.our-shop p{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.coffee-images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    background-color: aqua;
+}
+.coffee-images .img1{
+    flex: 30%;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px;
+    border: 5px solid white;
+    
+}
+.coffee-images .img2{
+    flex: 55%;
+    height: 280px;
+    object-fit: cover;
+    margin: 10px;
+    border: 5px solid white;
+}
+.coffee-images .img3{
+    flex: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    margin: 10px;
+    border: 5px solid white;
+
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+  }
+  
+  .flex-item {
+    flex: 2; /* Initially set to 66% width */
+    margin: 10px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    height: 280px;
+
+}
+  
+  .flex-item:nth-child(2) {
+    flex: 1 ; /* The second item takes 33% width */
+  }
+  
+  .flex-item:nth-child(3) {
+    flex: 1 100%; /* The third item takes full width */
+  }
+  
+  .flex-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media only screen and (max-width: 750px){
+    .our-shop p{
+      width: 90vw;
+      margin-bottom: 20px;
+    }
+    .flex-container{
+      flex-direction: column;
+      width: 90vw;
+    }
+  }
+  @media only screen and (max-width: 750px){
+    .our-shop h1{
+      font-size: 46px;
+    }
+  }

@@ -1,0 +1,120 @@
+.favourite-container{
+    padding: 0 75px;
+    padding-top: 95px;
+    padding-bottom: 45px;
+    background-color: rgb(246, 246, 246);
+}
+.top-block{
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: center;
+}
+.top-block img{
+    width:500px
+}
+.description-text{
+    max-width: 500px;
+}
+.description-text span{
+    color: rgb(236, 178, 121);
+    font-weight: 400;
+    font-size: 14px;
+
+}
+.description-text .title{
+    font-weight: 800;
+    font-size: 36px;
+    color: rgb(47, 47, 47);
+    margin-bottom: -0px;
+}
+.description-text p{
+    color: rgb(81, 81, 81);
+}
+.description-buttons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.description-buttons button{
+    cursor: pointer;
+    border: none;
+    background-color: rgb(31,33,49);
+    color: white;
+    width: 130px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.description-buttons button:hover{
+    background-color: rgb(56, 59, 87);
+
+}
+.description-buttons p{
+    cursor: pointer;
+     border-bottom: 2px solid rgb(31,33,49);
+     color:rgb(31,33,49) ;
+}
+.bottom-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+}
+
+.bottom-block .bottom-text p{
+    width: 80%;
+}
+.bottom-block i{
+    margin-left: 35px;
+    color: rgb(236, 178, 121);
+}
+@media only screen and (max-width: 750px){
+    .top-block{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-block img{
+        width:350px
+    }
+    .description-text{
+        text-align: center;
+    }
+    .description-buttons{
+        justify-content: center;
+    }
+    .description-text .title{
+        margin-top: -10px;
+    }
+    .bottom-block{
+        text-align: center;
+        width: 100%;
+    }
+    .bottom-block .bottom-text p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .description-text{
+        width:300px
+    }
+    .top-block img{
+        width:300px
+    }
+    .bottom-block{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 310px){
+    .description-text{
+        width:250px
+    }
+    .top-block img{
+        width:250px
+
+    }
+}

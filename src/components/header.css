@@ -1,0 +1,277 @@
+.header-container{
+    position: relative;
+  background: 
+  linear-gradient(to bottom, rgb(246, 246, 246) 30%, rgb(233, 231, 231) 100%), /* Horizontal gradient for the first half */
+  linear-gradient(to bottom, rgb(237, 164, 80)0%, rgb(172,125,83) 100%); /* Vertical gradient for the second half */
+background-size: 50%, 100% ; /* Set the size of each gradient */
+    background-repeat: no-repeat; /* Prevent the gradients from repeating */
+    padding: 0 75px;
+    padding-bottom: 50px;
+}
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-image: url('../assets/cardboard.png'); /* Specify the URL of your pattern image */
+    background-size: cover;
+  }
+.header-container .coffee{
+    width: 660px;
+    position: absolute;
+    top:10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.mobile-coffee{
+    display: none;
+}
+.navbar-links{ 
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 80%;
+}
+.navbar-links p{ 
+    font-size: 32px;
+    font-weight: 800;
+}
+.navbar-links i{ 
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.navbar-links span{ 
+    color:rgb(197, 129, 70)
+}
+.logo{
+    cursor: pointer;
+    z-index: 99;
+}
+.navbar-links .links{
+    width: 52%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+.navbar-links li{
+    padding: 0 10px;
+    border-radius: 8px;
+}
+.navbar-links li:hover{
+    cursor: pointer;
+}
+
+.left-block{
+    font-size: 62px;
+    font-weight: 800;
+}
+.left-block span{
+    color:rgb(197, 129, 70)
+}
+.left-block .price{
+    font-size: 42px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left-block .price button{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(197, 129, 70);
+    padding: 10px;
+    width: 170px;
+    background-color: inherit;
+    border: 3px solid rgb(197, 129, 70);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-block .price i{
+    margin-left: 10px;
+    font-size: 32px;
+    border-radius: 50%;
+}
+
+.right-block div{
+    width: 250px;
+    border-left: 3px solid white;
+    padding-left: 12px;
+    margin-left: auto;
+    color: rgb(20, 20, 20);
+}
+.right-block p{
+    font-size: 18px;
+    color: rgb(33, 33, 33);
+    font-weight: 500;
+}
+.last-block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.last-block .last-left{
+    border-left: 3px solid rgb(197, 129, 70);
+    padding-left: 12px;
+}
+.last-block .last-left p{
+    font-size: 18px;
+    color: rgb(54, 54, 54);
+    font-weight: 500;
+}
+.last-block .last-right{
+    color:white;
+    font-size: 21px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+@media only screen and (max-width: 1265px){
+    .header-container .coffee{
+        width:500px;
+        position: absolute;
+        top:10%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    .left-block{
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .left-block .price{
+        font-size: 32px;
+    }
+    .left-block .price button{
+        width: 150px;
+        font-size: 18px;
+    }
+    .last-block .last-left h1{
+        font-size: 28px;
+    }
+    .last-block .last-left p{
+        font-size: 16px;
+        color: rgb(54, 54, 54);
+        font-weight: 500;
+    }
+    .last-block .last-right{
+        color:white;
+        font-size: 16px;
+        font-weight: 500;
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .header-container .coffee{
+        width:400px;
+        position: absolute;
+        top:10%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+    .left-block{
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .left-block p{
+        margin-top: 0;
+        padding-top: 35px;
+    }
+    .left-block .price{
+        font-size: 22px;
+    }
+    .left-block .price button{
+        width: 140px;
+        font-size: 16px;
+    }
+    .right-block h1{
+        font-size: 25px;
+    }
+    .right-block p{
+        font-size: 14px;
+    }
+   
+}
+@media only screen and (max-width: 820px){
+    .header-container{
+        padding:0 30px
+    }
+    .navbar-links .links{
+        display: none;
+    }
+}
+@media only screen and (max-width: 720px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container .coffee{
+        display: none;
+    }
+    .mobile-coffee{
+        display: block;
+        width: 109%;
+        z-index: 99;
+    }
+    .navbar-links{
+        width:auto
+    }
+    .navbar-links .links{
+        display: none;
+    }
+    .left-block{
+        text-align: center;
+        font-size: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .price{
+        justify-content: space-around;
+        width: 245px;
+        margin-left: 50px;
+    }
+    .left-block .price button{
+        color: white;  
+        border-color: white;      
+    }
+    .right-block{
+        width: 100%;
+        text-align: end;
+    }
+    .right-block div{
+        width: 200px;
+        text-align: end;
+    }
+    .last-right{
+        width: 55%;
+    }
+    .last-block{
+        margin-bottom: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .right-block{
+        width: auto;
+    }
+    .last-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .last-left,.last-right{
+        text-align: center;
+        width: 100%;
+    }
+}
